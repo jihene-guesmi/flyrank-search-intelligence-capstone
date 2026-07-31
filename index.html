@@ -53,6 +53,14 @@
         The underlying research matrix isolates a clean, multi-panel 90-day time-series fact dataset layer (<code>fact_content_query_90d.parquet</code>) from the official <strong>FlyRank ML Internship Release</strong>, localized tightly to a stable chronological month (<code>month=2026-03</code>). In strict compliance with our privacy compliance contract, a comprehensive public-safety filtering sweep was executed prior to model exposure: all individual client brand domains, raw search text entries, specific network parameters, IP footprints, and database credentials have been fully excluded. The processed feature array tracks purely anonymous quantitative metrics: 90-day impressions scale, average organic index ranking position, and click conversion counts.
     </p>
 
+    <!-- FIG 1: RAW EMBEDDED DENSITY DISTRIBUTION GRAPH -->
+    <div style="text-align: center; margin: 30px 0; padding: 15px; border: 1px solid #DEE2E6; background: #F8F9FA;">
+        <img src="work/figures/w08_traffic_density.png" alt="Empirical Search Impression Volume Skew Chart" style="max-width: 100%; height: auto; border: 1px solid #DEE2E6;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6C757D; margin-top: 8px; font-style: italic;">
+            Figure 1.0: Empirical long-tail traffic volume skew distribution tracking exponential density across search console logs.
+        </div>
+    </div>
+
     <h2>3. Methodology & Validation Rigor</h2>
     <p>
         To ensure complete scientific validity, this architecture rejects standard randomized cross-validation structures, which cause massive data leakage when applied to rolling web log streams. Instead, we implement a strict <strong>Chronological Time-Aware Split Validation Design</strong>. The model instances are trained purely on historical timeline sequences (the oldest 80% data percentile) and pressure-tested on completely unseen future records inside the mid-panel slice. We systematically audit our features to ensure no future-window signals or target-derived trackers bleed into the matrix.
@@ -102,17 +110,12 @@
         </tbody>
     </table>
 
-    <p>
-        Our diagnostics reveal that while the supervised Random Forest outputs superior mathematical metrics on paper, it does so by memorizing fixed labels. Conversely, Model B (our K-Means Distance framework) uncovers hidden underlying behavioral clusters naturally. It successfully isolates intent gaps without requiring human threshold parameter engineering, proving superior adaptability for live production deployments.
-    </p>
+    <!-- FIG 2: RESULTS SECTION PIPELINE VECTOR SCATTER ANOMALIES GRAPH -->
+    <div style="text-align: center; margin: 30px 0; padding: 15px; border: 1px solid #DEE2E6; background: #F8F9FA;">
+        <img src="work/figures/w08_model_anomalies.png" alt="Model Cluster Distance Vector Scatter Chart" style="max-width: 100%; height: auto; border: 1px solid #DEE2E6;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #6C757D; margin-top: 8px; font-style: italic;">
+            Figure 2.0: Model B Unsupervised geometric vector cluster space layout segregating intent misalignment anomaly gaps.
+        </div>
+    </div>
 
-    <h2>5. Limitations & Honest Framing</h2>
     <p>
-        All assertions and performance values presented in this manuscript reflect <strong>measured</strong> distributions observed under a static simulation partition. This framework serves as a directional, data-driven <strong>decision-support</strong> tool and should never be interpreted as a source of direct causal guarantees. Real-world search engine results page movement remains heavily bound to external indexing cycles, consumer seasonality trends, and subsequent human copy edit execution.
-    </p>
-
-    <h2>6. Ranked Recommendations Playbook</h2>
-    <p>
-        Based on our validated unsupervised vector distance anomalies, prioritized content updates must follow a rigorous, cost/value-balanced playbook mapping clear archetypes to actions:
-    </p>
-    <ul>

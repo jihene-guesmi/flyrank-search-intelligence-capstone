@@ -2,7 +2,7 @@
 
 - **Author:** Jihene Guesmi
 - **Lane:** Structured Content Archetype Clustering
-- **Repo:** https://github.com
+- **Repo:** https://github.com/jihene-guesmi/flyrank-search-intelligence-capstone
 - **Date:** August 2026
 
 ## 1. Problem framing
